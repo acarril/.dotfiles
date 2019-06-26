@@ -33,6 +33,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 for_window [title="FloatingTermite"] floating enable
 bindsym $mod+Shift+Return exec i3-sensible-terminal --title=FloatingTermite
 
+# start ranger
+bindsym $mod+backslash exec i3-sensible-terminal -e /usr/bin/ranger
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
