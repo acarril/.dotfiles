@@ -52,11 +52,15 @@ bindsym $mod+Shift+Tab exec --no-startup-id ~/scripts/kbd_layout.sh
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
 #bindsym $mod+Ctrl+m exec i3-sensible-terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
+
+# Volume control keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/scripts/volumectrl.sh +5
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/scripts/volumectrl.sh -5
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
