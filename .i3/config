@@ -27,18 +27,18 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # start a floating terminal (depends on termite)
 for_window [title="FloatingTermite"] floating enable
-bindsym $mod+Shift+Return exec i3-sensible-terminal --title=FloatingTermite
+bindsym $mod+Shift+Return exec --no-startup-id i3-sensible-terminal --title=FloatingTermite
 
 # start ranger
-bindsym $mod+backslash exec i3-sensible-terminal -e /usr/bin/ranger
+bindsym $mod+backslash exec --no-startup-id i3-sensible-terminal -e /usr/bin/ranger
 
 # start ranger floating
 for_window [title="FloatingRanger"] floating enable
-bindsym $mod+Shift+backslash exec i3-sensible-terminal --title=FloatingRanger -e /usr/bin/ranger
+bindsym $mod+Shift+backslash exec --no-startup-id i3-sensible-terminal --title=FloatingRanger -e /usr/bin/ranger
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -60,16 +60,16 @@ bindsym $mod+Shift+Tab exec --no-startup-id ~/scripts/kbd_layout.sh
 #bindsym $mod+Ctrl+m exec i3-sensible-terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
-bindsym $mod+Ctrl+m exec pavucontrol
+bindsym $mod+Ctrl+m exec --no-startup-id pavucontrol
 
 # Volume control keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/scripts/volumectrl.sh +5
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/scripts/volumectrl.sh -5
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 ################################################################################################
 
@@ -78,19 +78,19 @@ bindsym XF86AudioPrev exec playerctl previous
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec i3-sensible-terminal -e 'bmenu'
-bindsym $mod+F2 exec firefox
-bindsym $mod+F3 exec pcmanfm
+bindsym $mod+Ctrl+b exec --no-startup-id i3-sensible-terminal -e 'bmenu'
+bindsym $mod+F2 exec --no-startup-id firefox
+bindsym $mod+F3 exec --no-startup-id pcmanfm
 # bindsym $mod+F3 exec ranger
-bindsym $mod+Shift+F3 exec gksu pcmanfm
-bindsym $mod+F5 exec i3-sensible-terminal -e 'mocp'
+bindsym $mod+Shift+F3 exec --no-startup-id gksu pcmanfm
+bindsym $mod+F5 exec --no-startup-id i3-sensible-terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
-bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
+bindsym $mod+Shift+d --release exec --no-startup-id "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+bindsym $mod+Shift+h exec --no-startup-id xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 focus_follows_mouse no
@@ -125,8 +125,8 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+h split h;exec notify-send 'tile horizontally'
-bindsym $mod+v split v;exec notify-send 'tile vertically'
+bindsym $mod+h split h;exec --no-startup-id notify-send 'tile horizontally'
+bindsym $mod+v split v;exec --no-startup-id notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
@@ -247,7 +247,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
