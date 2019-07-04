@@ -51,3 +51,11 @@ runtime! archlinux.vim
 " -- Option (1): Path to the Stata binary (including the executable name)
 let g:vimforstata_pathbin = "/usr/local/stata15/xstata-mp"
 
+
+""" vim-plug
+call plug#begin()
+Plug 'tpope/vim-sensible'
+"   On-demand loading
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+call plug#end()
+"""
