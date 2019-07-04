@@ -59,3 +59,7 @@ Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 """
+
+""" Plugins
+Plug 'JuliaEditorSupport/julia-vim'
+
