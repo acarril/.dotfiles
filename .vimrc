@@ -1,3 +1,13 @@
+""" vim-plug
+call plug#begin()
+Plug 'tpope/vim-sensible'
+"   On-demand loading
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'JuliaEditorSupport/julia-vim'
+Plug 'arcticicestudio/nord-vim'
+call plug#end()
+"""
+
 "   Spaces, tabs and indentation
 set autoindent          " new lines inherit indentation
 set tabstop=4	    	" number of visual spaces per TAB
@@ -52,14 +62,3 @@ runtime! archlinux.vim
 let g:vimforstata_pathbin = "/usr/local/stata15/xstata-mp"
 
 
-""" vim-plug
-call plug#begin()
-Plug 'tpope/vim-sensible'
-"   On-demand loading
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-call plug#end()
-"""
-
-""" Plugins
-Plug 'JuliaEditorSupport/julia-vim'
-Plug 'arcticicestudio/nord-vim'
