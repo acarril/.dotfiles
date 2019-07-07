@@ -62,4 +62,4 @@ call plug#end()
 
 """ Plugins
 Plug 'JuliaEditorSupport/julia-vim'
-
+Plug 'arcticicestudio/nord-vim'
