@@ -36,7 +36,7 @@ set cursorline          " highlight current line
     hi CursorLine cterm=NONE ctermbg=darkgrey
 set wildmenu            " visual autocomplete for command menu
 set showmatch           " highlight matching [{()}]
-"   colorscheme material, pablo
+colorscheme nord,  material, pablo
 
 "   Misc
 set history=1000        " set undo limit
