@@ -348,7 +348,7 @@ bar {
 	#i3bar_command i3bar
 	#status_command i3status
     font pango:Fira Code 10
-    status_command ~/bumblebee-status/bumblebee-status -m spotify nic cpu memory sensors battery layout datetime spacer -t iceberg-rainbow -p nic.format="{ssid}" memory.usedonly=true datetime.format="%B %d (%a)"
+    status_command ~/bumblebee-status/bumblebee-status -m spotify nic cpu memory sensors battery layout datetime spacer -p nic.format="{ssid}" memory.usedonly=true datetime.format="%B %d (%a)" -t iceberg-powerline 
 	position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
