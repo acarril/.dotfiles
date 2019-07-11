@@ -348,7 +348,7 @@ bar {
 	#i3bar_command i3bar
 	#status_command i3status
     font pango:Source Code Pro 10
-    status_command ~/.i3/bumblebee-status/bumblebee-status -m spotify nic cpu memory sensors2 layout pasink weather time date battery spacer -p weather.location="Princeton, NJ" sensors2.showcpu=false sensors2.chip=ath10k_hwmon-pci-0200 nic.format="{ssid}" memory.usedonly=true time.format="%H:%M" date.left-click="gsimplecal" date.format="%A, %B %d" -t onedark2-powerline 
+    status_command ~/.i3/bumblebee-status/bumblebee-status -m spotify nic cpu memory sensors2 layout pasink weather time date battery spacer -p sensors2.showcpu=false sensors2.chip=ath10k_hwmon-pci-0200 nic.format="{ssid}" memory.usedonly=true time.format="%H:%M" date.left-click="gsimplecal" date.format="%A, %B %d" -t onedark2-powerline 
 	position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
