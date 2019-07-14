@@ -95,6 +95,7 @@ bindsym $mod+Shift+h exec --no-startup-id xdg-open /usr/share/doc/manjaro/i3_hel
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+p exec --no-startup-id pamac-manager
 bindsym $mod+slash exec --no-startup-id firefox
+bindsym $mod+Shift+slash exec --no-startup-id firefox --private-window
 bindsym $mod+a exec --no-startup-id atom
 
 # change focus
