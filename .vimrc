@@ -1,10 +1,9 @@
 """ vim-plug
 call plug#begin()
 Plug 'tpope/vim-sensible'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'JuliaEditorSupport/julia-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
+Plug 'JuliaEditorSupport/julia-vim'
 call plug#end()
 """
 
