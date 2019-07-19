@@ -1,10 +1,10 @@
 """ vim-plug
 call plug#begin()
 Plug 'tpope/vim-sensible'
-"   On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 """
 
@@ -61,4 +61,5 @@ runtime! archlinux.vim
 " -- Option (1): Path to the Stata binary (including the executable name)
 let g:vimforstata_pathbin = "/usr/local/stata15/xstata-mp"
 
-
+" Powerline font symbols for statusline
+let g:airline_powerline_fonts = 1
