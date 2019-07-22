@@ -1,7 +1,7 @@
 """ vim-plug
 call plug#begin()
 Plug 'tpope/vim-sensible'
-Plug 'arcticicestudio/nord-vim'
+Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'lervag/vimtex'
@@ -14,6 +14,13 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
+
+" Colorscheme options
+syntax on
+set t_Co=256
+set cursorline
+colorscheme onedark
+let g:airline_theme='onedark'
 
 "   Spaces, tabs and indentation
 set autoindent          " new lines inherit indentation
@@ -49,11 +56,10 @@ set number              " show line numbers
 "highlight LineNr ctermfg=darkgrey
 "set relativenumber
 set showcmd             " show command in bottom bar
-set cursorline          " highlight current line
-    hi CursorLine cterm=NONE ctermbg=darkgrey
+"set cursorline          " highlight current line
+"    hi CursorLine cterm=NONE ctermbg=darkgrey
 set wildmenu            " visual autocomplete for command menu
 set showmatch           " highlight matching [{()}]
-colorscheme nord
 
 "   Misc
 set history=1000        " set undo limit
