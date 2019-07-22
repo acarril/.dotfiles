@@ -105,3 +105,14 @@ autoload -U compinit && compinit -u
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Print an empty line after prompt is rendered
+function precmd() {
+            # Print a newline before the prompt, unless it's the first
+            # prompt in the parent process.
+            if [ -z "$NEWLINE_BEFORE_PROMPT" ]; then
+                NEWLINE_BEFORE_PROMPT=1
+            elif [ "$NEWLINE_BEFORE_PROMPT" -eq 1 ]; then
+                echo ""
+            fi
+        }
