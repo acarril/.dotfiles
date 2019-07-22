@@ -4,6 +4,7 @@ Plug 'tpope/vim-sensible'
 Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'JuliaEditorSupport/julia-vim'
+Plug 'lervag/vimtex'
 call plug#end()
 """
 
@@ -70,3 +71,5 @@ let g:vimforstata_pathbin = "/usr/local/stata15/xstata-mp"
 " Powerline font symbols for statusline
 let g:airline_powerline_fonts = 1
 
+" vimtex parameters
+let g:vimtex_view_method = 'zathura'
