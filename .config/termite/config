@@ -43,7 +43,7 @@ scrollback_lines = 10000
 [colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
-cursor = #DC8CC3
+#cursor = #DC8CC3
 #cursor_foreground = #dcdccc
 
 #foreground = #dcdccc
@@ -56,28 +56,44 @@ cursor = #DC8CC3
 # If unset, will reverse foreground and background
 #highlight = #2f2f2f
 
-# https://git.io/nord
-foreground=#d8dee9
-background=#2e3440
+cursor = #c678dd
+background = #282c34
+foreground = #dcdfe4
+color0 = #383a42
+color1 = #e45649
+color2 = #50a14f
+color3 = #c18401
+color4 = #0184bc
+color5 = #a626a4
+color6 = #0997b3
+color7 = #fafafa
+color8 =  #282c34
+color9 =  #e06c75
+color10 = #98c379
+color11 = #e5c07b
+color12 = #61afef
+color13 = #c678dd
+color14 = #56b6c2
+color15 = #dcdfe4
+colorBD = #abb2bf
+colorIT =
+colorUL =
 
-# Colors from color0 to color254 can be set
-color0=#3b4252
-color1=#bf616a
-color2=#a3be8c
-color3=#ebcb8b
-color4=#81a1c1
-color5=#b48ead
-color6=#88c0d0
-color7=#e5e8f0
 
-color8=#4c566a
-color9=#bf616a
-color10=#a3be8c
-color11=#ebcb8b
-color12=#81a1c1
-color13=#b48ead
-color14=#8fbcbb
-color15=#eceff4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [hints]
 #font = Monospace 12
