@@ -41,59 +41,54 @@ scrollback_lines = 10000
 #scrollbar = off
 
 [colors]
-# If both of these are unset, cursor falls back to the foreground color,
-# and cursor_foreground falls back to the background color.
-#cursor = #DC8CC3
-#cursor_foreground = #dcdccc
+# Base16 OneDark
+# Author: Lalit Magant (http://github.com/tilal6991)
 
-#foreground = #dcdccc
-#foreground_bold = #ffffff
-#background = #3f3f3f
+foreground          = #abb2bf
+foreground_bold     = #b6bdca
+cursor              = #b6bdca
+cursor_foreground   = #282c34
+background          = rgba(40, 44, 52)
 
-# 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
+# 16 color space
 
-# If unset, will reverse foreground and background
-#highlight = #2f2f2f
+# Black, Gray, Silver, White
+color0  = #282c34
+color8  = #545862
+color7  = #abb2bf
+color15 = #c8ccd4
 
-cursor = #c678dd
-background = #282c34
-foreground = #dcdfe4
-color0 = #383a42
-color1 = #e45649
-color2 = #50a14f
-color3 = #c18401
-color4 = #0184bc
-color5 = #a626a4
-color6 = #0997b3
-color7 = #fafafa
-color8 =  #282c34
-color9 =  #e06c75
+# Red
+color1  = #e06c75
+color9  = #e06c75
+
+# Green
+color2  = #98c379
 color10 = #98c379
+
+# Yellow
+color3  = #e5c07b
 color11 = #e5c07b
+
+# Blue
+color4  = #61afef
 color12 = #61afef
+
+# Purple
+color5  = #c678dd
 color13 = #c678dd
+
+# Teal
+color6  = #56b6c2
 color14 = #56b6c2
-color15 = #dcdfe4
-colorBD = #abb2bf
-colorIT =
-colorUL =
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Extra colors
+color16 = #d19a66
+color17 = #be5046
+color18 = #353b45
+color19 = #3e4451
+color20 = #565c64
+color21 = #b6bdca
 
 [hints]
 #font = Monospace 12
