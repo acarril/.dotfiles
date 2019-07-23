@@ -60,7 +60,7 @@ color15 = #c8ccd4
 
 # Red
 color1  = #e06c75
-color9  = #e06c75
+color9  = #be5046
 
 # Green
 color2  = #98c379
@@ -68,7 +68,7 @@ color10 = #98c379
 
 # Yellow
 color3  = #e5c07b
-color11 = #e5c07b
+color11 = #d19a66
 
 # Blue
 color4  = #61afef
