@@ -8,6 +8,9 @@ Plug 'lervag/vimtex'
 call plug#end()
 """
 
+" clipboard
+set clipboard=unnamed
+
 " Enable true colors (24 bit)
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
