@@ -8,7 +8,7 @@ Plug 'lervag/vimtex'
 call plug#end()
 """
 
-" clipboard
+" Use system clipboard (w gvim)
 set clipboard=unnamed
 
 " Enable true colors (24 bit)
