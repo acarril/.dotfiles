@@ -82,3 +82,6 @@ let g:airline_powerline_fonts = 1
 
 " vimtex parameters
 let g:vimtex_view_method = 'zathura'
+
+" Spellcheck
+map <F6> :setlocal spell! spelllang=en_us<CR>
