@@ -57,7 +57,7 @@ set laststatus=2        " always display status bar
 set ruler               " always display cursor position
 set number              " show line numbers
 "highlight LineNr ctermfg=darkgrey
-"set relativenumber
+set relativenumber
 set showcmd             " show command in bottom bar
 "set cursorline          " highlight current line
 "    hi CursorLine cterm=NONE ctermbg=darkgrey
