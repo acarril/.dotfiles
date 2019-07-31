@@ -4,7 +4,8 @@ set imap_check_subscribed
 set imap_keepalive = 300
 unset imap_passive
 set mail_check = 60
-set mbox_type=Maildir
+set mbox_type = Maildir
+set collapse_all = yes
 
 bind index G imap-fetch-mail
 set editor = "nvim"
@@ -34,3 +35,8 @@ set sidebar_width = 25
 set sidebar_divider_char = ' | '
 set sidebar_indent_string = '  ''
 set sidebar_format = "%B %* [%?N?%N / ?%S]"
+
+# Status bar
+set status_chars = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
