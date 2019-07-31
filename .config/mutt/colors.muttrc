@@ -8,10 +8,10 @@ color markers       red             white
 color attachment    white           default
 color search        brightmagenta   default
 color indicator     brightblack     yellow
-color tree          green          default
+color tree          green           default
 
 # sidebarh
-color sidebar_new   default blue
+color sidebar_new   blue            default
 
 # index ----------------------------------------------------------------
 
@@ -20,9 +20,9 @@ color index         brightred       default         "~E"    # expired messages
 color index         blue            default         "~N"    # new messages
 color index         blue            default         "~O"    # old messages
 color index         brightmagenta   default         "~Q"    # messages that have been replied to
-color index         brightwhite           default         "~R"    # read messages
+color index         white           default         "~R"    # read messages
 color index         blue            default         "~U"    # unread messages
-color index         brightyellow    default         "~v"    # messages part of a collapsed thread
+color index         brightwhite    default         "~v"    # messages part of a collapsed thread
 color index         brightyellow    default         "~P"    # messages from me
 color index         red             default         "~F"    # flagged messages
 color index         black           red             "~D"    # deleted messages
