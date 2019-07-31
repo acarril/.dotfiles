@@ -1,0 +1,36 @@
+## General options
+set header_cache = "~/.cache/mutt"
+set imap_check_subscribed
+set imap_keepalive = 300
+unset imap_passive
+set mail_check = 60
+set mbox_type=Maildir
+
+bind index G imap-fetch-mail
+set editor = "nvim"
+set charset = "utf-8"
+set record = ''
+
+#source ~/.config/mutt/colors-gruvbox-shuber.muttrc
+#source ~/.config/mutt/colors-gruvbox-shuber-extended.muttrc
+source ~/.config/mutt/colors.muttrc
+
+set mailcap_path = ~/.mutt/mailcap 
+auto_view text/html
+
+## Personal account
+source "~/.config/mutt/personalrc"
+folder-hook $folder 'source ~/.config/mutt/personalrc'
+
+## Princeton account
+source "~/.config/mutt/princetonrc"
+folder-hook $folder 'source ~/.config/mutt/princetonrc'
+
+## Sidebar patch config
+set sidebar_visible
+set sidebar_short_path
+set sidebar_folder_indent
+set sidebar_width = 25
+set sidebar_divider_char = ' | '
+set sidebar_indent_string = '  ''
+set sidebar_format = "%B %* [%?N?%N / ?%S]"
