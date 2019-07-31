@@ -6,18 +6,21 @@ unset imap_passive
 set mail_check = 60
 set mbox_type = Maildir
 set collapse_all = yes
+set sort = threads
 
 bind index G imap-fetch-mail
 set editor = "nvim"
 set charset = "utf-8"
 set record = ''
 
-#source ~/.config/mutt/colors-gruvbox-shuber.muttrc
-#source ~/.config/mutt/colors-gruvbox-shuber-extended.muttrc
 source ~/.config/mutt/colors.muttrc
 
-set mailcap_path = ~/.mutt/mailcap 
+## HTML emails
+set mailcap_path = ~/.config/mutt/mailcap 
 auto_view text/html
+alternative_order text/plain text/enriched text/html
+# run viewer defined in mailcap by <return> in attach view
+bind attach <return> view-mailcap
 
 ## Personal account
 source "~/.config/mutt/personalrc"
