@@ -27,8 +27,8 @@ source "~/.config/mutt/personalrc"
 folder-hook $folder 'source ~/.config/mutt/personalrc'
 
 ## Princeton account
-source "~/.config/mutt/princetonrc"
-folder-hook $folder 'source ~/.config/mutt/princetonrc'
+#source "~/.config/mutt/princetonrc"
+#folder-hook $folder 'source ~/.config/mutt/princetonrc'
 
 ## Sidebar patch config
 set sidebar_visible
