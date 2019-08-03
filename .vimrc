@@ -65,6 +65,7 @@ set tabstop=4	    	" number of visual spaces per TAB
 set softtabstop=4 	    " number of spaces in tab when editing
 set expandtab		    " tabs are spaces
 set smarttab            " insert 'tabstop' number of spaces w/tab
+set shiftwidth=0
 
 "   Search
 set hlsearch            " enable search highlighting
