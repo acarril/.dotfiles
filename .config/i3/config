@@ -348,7 +348,7 @@ set_from_resource $Xcolor15    color15
 bar {
 	#i3bar_command i3bar
 	#status_command i3status
-    font pango:FuraCode Nerd Font 9
+    font pango:FuraCode Nerd Font 10
     status_command ~/.config/i3/bumblebee-status/bumblebee-status -m spotify nic cpu memory sensors layout pasink weather time date battery spacer -p nic.format="{ssid}" sensors.path=/sys/class/thermal/thermal_zone10/temp sensors.showmhz=false memory.usedonly=true time.format="%H:%M" date.left-click="gsimplecal" date.format="%A, %B %d" -t iceberg2-powerline 
 	position top
 
