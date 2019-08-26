@@ -124,3 +124,5 @@ fi
 if [[ ! "$SSH_AUTH_SOCK" ]]; then
     eval "$(<~/.ssh-agent-thing)" > /dev/null
 fi
+
+export ELECTRON_TRASH=gio
