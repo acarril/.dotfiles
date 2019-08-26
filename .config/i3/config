@@ -66,6 +66,7 @@ bindsym $mod+Ctrl+m exec --no-startup-id pavucontrol
 # Volume control keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/scripts/volumectrl.sh +5
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/scripts/volumectrl.sh -5
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
