@@ -6,3 +6,5 @@ export BROWSER=/usr/bin/firefox
 export TERMINAL=/usr/bin/termite
 export PATH="$PATH:/usr/local/stata15"
 export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
+
+export ELECTRON_TRASH=gio
