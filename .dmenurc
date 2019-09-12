@@ -3,7 +3,7 @@
 #
 
 ## define the font for dmenu to be used
-DMENU_FN="FuraCode Nerd Font 12"
+DMENU_FN="Roboto-11"
 
 ## background colour for unselected menu-items
 DMENU_NB="#222D31"
@@ -20,5 +20,8 @@ DMENU_SF="#F9FAF9"
 ## command for the terminal application to be used:
 TERMINAL_CMD="i3-sensible-terminal -e"
 
+## height
+DMENU_HEIGHT=30
+
 ## export our variables
-DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
+DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB -h $DMENU_HEIGHT"
