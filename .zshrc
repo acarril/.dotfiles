@@ -75,6 +75,9 @@ source $ZSH/oh-my-zsh.sh
 # autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # autojump
 [[ -s /home/alvaro/.autojump/etc/profile.d/autojump.sh ]] && source /home/alvaro/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
