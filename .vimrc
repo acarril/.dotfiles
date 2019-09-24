@@ -128,3 +128,6 @@ inoremap <F3> <c-o>:w<cr>
 " Swap the word the cursor is on with the next word (which can be on a
 " newline, and punctuation is "skipped"):
 nmap <silent> gw "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><C-o>:noh<CR>
+
+" Let left/right movement wrap between lines
+set whichwrap+=<,>,h,l,[,]
