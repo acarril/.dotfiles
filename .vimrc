@@ -131,3 +131,7 @@ nmap <silent> gw "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><C-o>:noh<CR>
 
 " Let left/right movement wrap between lines
 set whichwrap+=<,>,h,l,[,]
+
+" Compile markdown with pandoc on F9
+" Taken from https://vi.stackexchange.com/questions/17549/using-pandoc-with-vim-keybindings
+nnoremap <buffer><nowait><silent> <F9> :<c-u>silent call system('pandoc '.expand('%:p:S').' -o '.expand('%:p:r:S').'.pdf')<cr>
