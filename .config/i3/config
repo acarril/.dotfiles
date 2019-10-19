@@ -212,6 +212,16 @@ bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
+# Rename current workspace (effectively moving all containers to other workspace)
+bindsym $mod+Mod1+1 rename workspace to $ws1
+bindsym $mod+Mod1+2 rename workspace to $ws2
+bindsym $mod+Mod1+3 rename workspace to $ws3
+bindsym $mod+Mod1+4 rename workspace to $ws4
+bindsym $mod+Mod1+5 rename workspace to $ws5
+bindsym $mod+Mod1+6 rename workspace to $ws6
+bindsym $mod+Mod1+7 rename workspace to $ws7
+bindsym $mod+Mod1+8 rename workspace to $ws8
+
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
 # assign [class="Pale moon"] $ws2
