@@ -100,6 +100,11 @@ set showcmd             " show command in bottom bar
 set wildmenu            " visual autocomplete for command menu
 set showmatch           " highlight matching [{()}]
 
+"   File explorer
+let g:netrw_liststyle = 3   " viw as tree
+let g:netrw_banner = 0      " remove banner
+
+
 "   Misc
 set history=1000        " set undo limit
 
