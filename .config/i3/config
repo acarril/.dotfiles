@@ -89,19 +89,21 @@ bindsym $mod+F2 exec --no-startup-id firefox
 bindsym $mod+F3 exec --no-startup-id pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec --no-startup-id gksu pcmanfm
-bindsym $mod+F5 exec --no-startup-id i3-sensible-terminal -e 'mocp'
-bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b
+#bindsym $mod+F5 exec --no-startup-id i3-sensible-terminal -e 'mocp'
+#bindsym $mod+t exec --no-startup-id pkill compton
+#bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 #bindsym $mod+Shift+d --release exec --no-startup-id "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec --no-startup-id xdg-open /usr/share/doc/manjaro/i3_help.pdf
+#bindsym $mod+Shift+h exec --no-startup-id xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+p exec --no-startup-id pamac-manager
 bindsym $mod+slash exec --no-startup-id firefox
 bindsym $mod+Shift+slash exec --no-startup-id firefox --private-window
 bindsym $mod+a exec --no-startup-id atom
+
+# Screenshots
+bindsym Print --release exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym $mod+Print --release exec --no-startup-id maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym $mod+Shift+Print --release exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
 
 # change focus
 focus_follows_mouse no
@@ -142,8 +144,8 @@ bindsym $mod+q split toggle
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
