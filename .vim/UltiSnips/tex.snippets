@@ -1,0 +1,111 @@
+# Tex snippets
+# Note: a lot of useful snippets taken from https://castel.dev/post/lecture-notes-1/
+
+snippet m "Inline maths" w
+\$${1:${VISUAL}}\$$0
+endsnippet
+
+#snippet m "Inline math" w
+#$${1}$`!p
+#if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+#    snip.rv = ' '
+#else:
+#    snip.rv = ''
+#`$2
+#endsnippet
+
+#snippet '([A-Za-z])(\d)' "auto subscript" wrA
+#`!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
+#endsnippet
+#
+#snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
+#`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
+#endsnippet
+
+snippet ^ "Protected subscript" i
+^{${1:${VISUAL}}}$0
+endsnippet
+
+snippet _ "Protected subscript" i
+_{${1:${VISUAL}}}$0
+endsnippet
+
+snippet bmat "Bracket matrix" 
+	\\begin{bmatrix}
+		${0:${VISUAL}}
+	\\end{bmatrix}
+endsnippet
+
+snippet vec "bold, upright math symbols (vectors)" i
+\vect{${1:${VISUAL}}}$0
+endsnippet
+
+snippet vecd "vector with dimensions" i
+\vectdim{$1}{$2}{${3:${VISUAL}}}$0
+endsnippet
+
+snippet kw "Add keyword to index" i
+\kw{${1:${VISUAL}}}$0
+endsnippet
+
+snippet inkfig "Import figure created with Inkscape PDF + LaTeX" w
+\begin{figure}[h]
+	\centering
+	\def\svgwidth{${1:${VISUAL:<scale_factor>}}\textwidth}
+	\import{${2:${VISUAL:<subdir>}}}{${3:${VISUAL:<filename>}}.pdf_tex}
+\end{figure}
+$0
+endsnippet
+
+
+snippet testin "nada"
+\textbf{${1:${VISUAL:algo}}}
+endsnippet
+
+snippet xedoc "Basic xelatex document template" i
+% !TEX program = xelatex
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage[libertine]{newtxmath}
+\usepackage{mathspec}
+	\setmainfont{Linux Libertine O}
+%	\setsansfont[Scale=0.8.25]{Lato}
+%	\setsansfont[Scale=0.8]{Open Sans}
+%	\setsansfont[Scale=0.825]{Ubuntu}
+%	\setmonofont[Scale=.9]{Ubuntu Mono}
+\usepackage{microtype}
+\usepackage[margin=1in]{geometry} 
+\usepackage{bm}
+\usepackage{parskip} 
+\usepackage{titling}
+%\usepackage[backend=biber, style=authoryear, doi=false, url=false, isbn=false, alldates=year]{biblatex}
+%	\renewbibmacro{in:}{}
+%	\renewcommand*{\nameyeardelim}{\addcomma\space}
+%	\AtEveryBibitem{\clearfield{month}}
+%	\AtEveryBibitem{\clearfield{day}}
+%	\bibliography{${5:${VISUAL:<bibfile>}}}
+
+\newcommand{\kw}[1]{\textbf{#1}} 
+\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
+\newcommand{\vectdim}[3]{\underset{(#2 \times #3)}{\vect{#1}}} 
+
+\DeclareMathOperator{\E}{\mathbb{E}}
+
+\title{ECO${1:${VISUAL:<class>}}: ${2:${VISUAL:Assignment}} \#${3:${VISUAL:<#>}}}
+\author{Alvaro Carril}
+\date{Due: ${4:${VISUAL:<date>}}}
+
+\begin{document}
+
+\noindent\parbox{\linewidth}{\large%
+	\parbox{.4\linewidth}{\textbf{\thetitle}\newline\thedate}\hfill%
+	\parbox[t][][b]{.4\linewidth}{\raggedleft\theauthor%
+}}
+
+\hrulefill
+
+${0:${VISUAL:Type masterpiece...}}
+
+\end{document}
+endsnippet
