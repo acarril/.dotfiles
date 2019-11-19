@@ -5,6 +5,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'lervag/vimtex'
+Plug 'psliwka/vim-smoothie'
 " Track the engine.
 Plug 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
