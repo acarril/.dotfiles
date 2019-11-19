@@ -129,3 +129,5 @@ if [[ ! "$SSH_AUTH_SOCK" ]]; then
 fi
 
 export ELECTRON_TRASH=gio
+
+bindkey -v
