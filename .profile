@@ -10,6 +10,9 @@ export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 
 export ELECTRON_TRASH=gio
 
+# Stuff for bspwm
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # Aliases
 alias vi=nvim
 alias ll=ls -lH
