@@ -106,7 +106,7 @@ bindsym $mod+Print --release exec --no-startup-id maim -i $(xdotool getactivewin
 bindsym $mod+Shift+Print --release exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
 bindsym Ctrl+Print --release exec --no-startup-id maim -u ~/Pictures/$(date +%F_%T).png
 bindsym $mod+Ctrl+Print --release exec --no-startup-id maim -i $(xdotool getactivewindow) -u ~/Pictures/$(date +%F_%T).png
-bindsym $mod+Ctrl+Shift+Print --release exec --no-startup-id maim -u ~/Pictures/$(date +%F_%T).png
+bindsym $mod+Ctrl+Shift+Print --release exec --no-startup-id maim -s -u ~/Pictures/$(date +%F_%T).png
 
 # change focus
 focus_follows_mouse no
