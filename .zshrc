@@ -8,7 +8,7 @@ export ZSH="/home/alvaro/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gnzh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,6 +79,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # autojump
 [[ -s /home/alvaro/.autojump/etc/profile.d/autojump.sh ]] && source /home/alvaro/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
@@ -130,4 +131,4 @@ fi
 
 export ELECTRON_TRASH=gio
 
-bindkey -v
+#bindkey -v
