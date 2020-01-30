@@ -10,6 +10,7 @@ set $mod Mod4
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 1
 new_float normal
+for_window [class=.*] border 1pixel # force border in all windows (Evince)
 
 # Hide borders
 hide_edge_borders none
