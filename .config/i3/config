@@ -35,12 +35,12 @@ bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 for_window [title="FloatingTermite"] floating enable
 bindsym $mod+Shift+Return exec --no-startup-id i3-sensible-terminal --title=FloatingTermite
 
-# start ranger
-bindsym $mod+backslash exec --no-startup-id i3-sensible-terminal -e /usr/bin/ranger
+# start file manager
+bindsym $mod+backslash exec --no-startup-id /usr/bin/pcmanfm
 
-# start ranger floating
-for_window [title="FloatingRanger"] floating enable
-bindsym $mod+Shift+backslash exec --no-startup-id i3-sensible-terminal --title=FloatingRanger -e /usr/bin/ranger
+# start floating file manager
+#for_window [title="FloatingRanger"] floating enable
+#bindsym $mod+Shift+backslash exec --no-startup-id i3-sensible-terminal --title=FloatingRanger -e /usr/bin/ranger
 
 # kill focused window
 bindsym $mod+Shift+q kill
