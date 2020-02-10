@@ -132,3 +132,5 @@ fi
 export ELECTRON_TRASH=gio
 
 #bindkey -v
+
+source /home/alvaro/.config/broot/launcher/bash/br
