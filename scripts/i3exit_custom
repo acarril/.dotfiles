@@ -17,9 +17,9 @@ case "$1" in
     suspend)
         dm-tool lock && $logind suspend
         ;;
-    hibernate)
-        dm-tool lock && $logind hibernate
-        ;;
+#    hibernate)
+#        dm-tool lock && $logind hibernate
+#        ;;
     reboot)
         $logind reboot
         ;;
