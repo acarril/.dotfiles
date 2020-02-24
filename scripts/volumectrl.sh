@@ -1,6 +1,6 @@
 #!/bin/sh
 # Get active sink:
-SINK=$(pactl list short sinks | grep RUNNING | cut -c1-1)
+SINK=$(pactl list short sinks | grep RUNNING | head -n1 | awk '{print $1;}')
 # If no active sink then set SINK to internal speakers:
 if [ -z "$SINK" ];
 then
