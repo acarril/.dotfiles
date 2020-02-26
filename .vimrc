@@ -1,5 +1,6 @@
 """ vim-plug
 call plug#begin()
+Plug 'preservim/nerdtree'
 Plug 'tpope/vim-sensible'
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
@@ -141,3 +142,8 @@ set whichwrap+=<,>,h,l,[,]
 " Compile markdown with pandoc on F9
 " Taken from https://vi.stackexchange.com/questions/17549/using-pandoc-with-vim-keybindings
 nnoremap <buffer><nowait><silent> <F9> :<c-u>silent call system('pandoc '.expand('%:p:S').' -o '.expand('%:p:r:S').'.pdf')<cr>
+
+" NERDTree options
+nmap <C-n> :NERDTreeToggle<CR>
+
+
